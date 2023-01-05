@@ -8,21 +8,21 @@ let meal = ""
 let energy = ""
 let mood = ""  
 if(this.meal < 3){
-    console.log("Я голоден")
+    meal= "Я голоден"
 } else{
-    console.log("Я не голоден")
+    meal = "Я не голоден"
 }
 
 if (this.energy < 3){
-    console.log("Я хочу спать")
+    energy = "Я хочу спать"
 }else{
-    console.log("Я не хочу спать")
+    energy = "Я не хочу спать"
 }
 
 if (this.mood < 3){
-    console.log("Мне скучно")
+    mood = "Мне скучно"
 }else{
-    console.log("Мне весело")
+    mood = "Мне весело"
 }
 
 if(this.meal <= 0 || this.energy <= 0 || this.mood <= 0){
@@ -30,7 +30,7 @@ if(this.meal <= 0 || this.energy <= 0 || this.mood <= 0){
 }
 
 
- return `Имя: ${this.name} еда: ${meal} ${this.meal} энергия: ${this.energy} настроение: ${this.mood}`
+ return `Имя: ${this.name} еда: ${meal} ${this.meal} энергия: ${energy} ${this.energy} настроение: ${mood} ${this.mood}`
   },
   
   setName: function(){
